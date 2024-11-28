@@ -1,5 +1,4 @@
 import { useState } from "react";
-import ReactPlayer from "react-player/youtube";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -11,18 +10,8 @@ export default function Header() {
   return (
     <header className="overflow-x-hidden flex flex-col items-center bg-black">
       <h1 className="hidden">Oleada Psycho Festival Psychobilly</h1>
-
-      <div className=" sticky top-0 ">
-        <img src="/videoframe.png" alt="Frame" className="absolute top-0 " />
-
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=uJE2IQ0P0uo"
-          height={720}
-          width={1280}
-          loop={true}
-          playing={true}
-          muted={true}
-        />
+      <div className="bg-[url('/design/bg-design.png')] w-[1280px] h-[720px]">
+        <img src="/design/design.png" alt="Frame" className="absolute top-0 " />
       </div>
       <h2 className="font-medium font-ubuntu absolute top-6 md:hidden">
         Fernet Killer Crew presenta:
@@ -140,7 +129,10 @@ export default function Header() {
         alt="Oleada Psycho Logo"
         className=" w-[80vw] max-w-[450px] absolute top-32 lg:top-12"
       />
-      <h2 className=" mt-2 font-ubuntu font-black text-2xl lg:text-3xl text-white drop-shadow-lg absolute top-[480px] sm:top-[580px] lg:top-[530px]">
+      <h2 className=" [text-shadow:_0_2px_4px_black] mt-2 font-ubuntu font-black text-2xl lg:text-3xl text-white absolute top-[480px] sm:top-[580px] lg:top-[530px]">
+        23-24-25-26 de ENERO
+      </h2>
+      <h2 className=" [text-shadow:_0_4px_8px_black] mt-2 font-ubuntu font-black text-2xl lg:text-3xl text-white absolute top-[480px] sm:top-[580px] lg:top-[530px]">
         23-24-25-26 de ENERO
       </h2>
 
@@ -150,7 +142,9 @@ export default function Header() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <p className="uppercase text-center">consigue tus entradas ya!!!</p>
+        <p className="uppercase text-center">
+          ¡Conseguí tu combo con descuento!
+        </p>
       </a>
     </header>
   );
