@@ -1,6 +1,6 @@
-import { useState, Suspense, lazy } from "react";
-const Design = lazy(() => import("./Design"));
-const NavMobile = lazy(() => import("./NavMobile"));
+import { useState } from "react";
+import Design from "./Design";
+import NavMobile from "./NavMobile";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -12,9 +12,7 @@ export default function Header() {
   return (
     <header className="overflow-x-hidden flex flex-col items-center bg-black">
       <h1 className="hidden">Oleada Psycho Festival Psychobilly</h1>
-      <Suspense>
-        <Design />
-      </Suspense>
+      <Design />
 
       <h2 className="font-medium font-ubuntu absolute top-6 md:hidden">
         Fernet Killer Crew presenta:
@@ -28,9 +26,7 @@ export default function Header() {
 
       {/* ================================= NAV MOBILE ================================= */}
 
-      <Suspense>
-        <NavMobile handleOpen={handleOpen} open={open} />
-      </Suspense>
+      <NavMobile handleOpen={handleOpen} open={open} />
 
       {/* ================================= NAV DESKTOP ================================= */}
 

@@ -11,7 +11,7 @@ function App() {
       <main className="bg-gradient-to-b from-black to-black2 h-[100%] pb-8">
         <p className=" font-ubuntu text-black2 text-xl font-medium py-4 w-[90vw] max-w-[900px] m-auto text-justify">
           {" "}
-          <span className=" font-extrabold text-pink">Oleada Psycho</span> es
+          <span className=" font-extrabold text-pink">Oleada Psycho SIN LAZY</span> es
           un festival que organizamos todos los veranos, desde el 2018, donde en{" "}
           <span className=" font-extrabold ">Mar del Plata</span> recibimos
           bandas y público, de diferentes puntos de Argentina y del exterior, de
