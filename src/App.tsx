@@ -1,8 +1,9 @@
+import { Suspense, lazy } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import LineUp from "./components/LineUp";
-import Sponsors from "./components/Sponsors";
-import Ubication from "./components/Ubication";
+const LineUp = lazy(() => import("./components/LineUp"));
+const Sponsors = lazy(() => import("./components/Sponsors"));
+const Ubication = lazy(() => import("./components/Ubication"));
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
       <main className="bg-gradient-to-b from-black to-black2 h-[100%] pb-8">
         <p className=" font-ubuntu text-black2 text-xl font-medium py-4 w-[90vw] max-w-[900px] m-auto text-justify">
           {" "}
-          <span className=" font-extrabold text-pink">Oleada Psycho</span> es
-          un festival que organizamos todos los veranos, desde el 2018, donde en{" "}
+          <span className=" font-extrabold text-pink">Oleada Psycho CON LAZY</span> es un
+          festival que organizamos todos los veranos, desde el 2018, donde en{" "}
           <span className=" font-extrabold ">Mar del Plata</span> recibimos
           bandas y público, de diferentes puntos de Argentina y del exterior, de
           los estilos{" "}
@@ -25,9 +26,17 @@ function App() {
           HotRod, tiene la excusa perfecta para venir a la ciudad y encontrarse.
         </p>
 
-        <LineUp />
-        <Ubication />
-        <Sponsors />
+        <Suspense>
+          <LineUp />
+        </Suspense>
+
+        <Suspense>
+          <Ubication />
+        </Suspense>
+
+        <Suspense>
+          <Sponsors />
+        </Suspense>
       </main>
       <Footer />
     </>
