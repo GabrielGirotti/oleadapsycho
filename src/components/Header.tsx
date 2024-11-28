@@ -1,4 +1,5 @@
 import { useState, Suspense, lazy } from "react";
+const Design = lazy(() => import("./Design"));
 const NavMobile = lazy(() => import("./NavMobile"));
 
 export default function Header() {
@@ -11,13 +12,10 @@ export default function Header() {
   return (
     <header className="overflow-x-hidden flex flex-col items-center bg-black">
       <h1 className="hidden">Oleada Psycho Festival Psychobilly</h1>
-      <div className="bg-[url('/design/bg-design.png')] w-[1280px] h-[720px]">
-        <img
-          src="/design/design.png"
-          alt="Frame"
-          className="absolute top-0 hidden md:block"
-        />
-      </div>
+      <Suspense>
+        <Design />
+      </Suspense>
+
       <h2 className="font-medium font-ubuntu absolute top-6 md:hidden">
         Fernet Killer Crew presenta:
       </h2>
@@ -33,7 +31,7 @@ export default function Header() {
       <Suspense>
         <NavMobile handleOpen={handleOpen} open={open} />
       </Suspense>
-      
+
       {/* ================================= NAV DESKTOP ================================= */}
 
       <nav className="hidden md:flex font-ubuntu font-black text-lg  text-pink uppercase  gap-16 absolute top-0 h-16 items-center justify-center">
