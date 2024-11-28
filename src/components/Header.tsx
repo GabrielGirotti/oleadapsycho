@@ -11,7 +11,7 @@ export default function Header() {
     <header className="overflow-x-hidden flex flex-col items-center bg-black">
       <h1 className="hidden">Oleada Psycho Festival Psychobilly</h1>
       <div className="bg-[url('/design/bg-design.png')] w-[1280px] h-[720px]">
-        <img src="/design/design.png" alt="Frame" className="absolute top-0 " />
+        <img src="/design/design.png" alt="Frame" className="absolute top-0 hidden md:block" />
       </div>
       <h2 className="font-medium font-ubuntu absolute top-6 md:hidden">
         Fernet Killer Crew presenta:
