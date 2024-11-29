@@ -64,7 +64,7 @@ export default function Header() {
 
       <a
         className=" mt-2 max-w-[80vw] font-ubuntu font-black text-lg lg:text-xl px-4 py-2 lg:px-6 lg:py-4  text-white bg-pink absolute top-[530px] lg:top-[580px] sm:top-[620px] duration-300 rounded-2xl hover:text-black2 hover:bg-yellow"
-        href="https://articket.com.ar/OLEADA-PSYCHO-ABONO-X-LOS-TRES-DIAS/"
+        href="https://articket.com.ar/OLEADA-PSYCHO-2025-ABONO/"
         target="_blank"
         rel="noopener noreferrer"
       >
