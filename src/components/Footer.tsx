@@ -12,7 +12,7 @@ export default function Footer() {
         </a>
         <a
           className="w-8 cursor-pointer hover:scale-105 duration-300 "
-          href="https://open.spotify.com/playlist/3hbOyjh00ZpFXCtF8tAR39?si=eb80e363c23c468f&nd=1&dlsi=20da4723ec8c488e"
+          href="https://open.spotify.com/playlist/0rsvmPHAMj3qIWiSlIBcN6"
           target="_blank"
           rel="noopener noreferrer"
         >
