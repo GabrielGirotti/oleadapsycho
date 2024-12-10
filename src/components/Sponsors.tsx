@@ -8,7 +8,7 @@ export default function Sponsors() {
       <ul className="flex items-center justify-center flex-wrap w-[90vw] max-w-[700px] gap-2">
         <li className=" cursor-pointer hover:scale-105 duration-300 lg:opacity-35 hover:opacity-100">
           <a
-            href="https://www.instagram.com/fernetkillercrew/"
+            href="https://www.instagram.com/fernetkillercrewofficial/"
             target="_blank"
             rel="noopener noreferrer"
           >
